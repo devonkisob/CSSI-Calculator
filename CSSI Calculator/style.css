@@ -1,0 +1,43 @@
+.calculator-grid{
+  max-width: 500px;
+  margin: auto;
+}
+
+#display{
+  text-align: right;
+  height: 100px;
+  line-height: 100px; /* refers to the line/box thing that the dispayed text is in */
+  font-size: 30px;
+  padding: 10px 10px;
+}
+
+.buttons{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /*seperates in 4 equal parts*/
+  border-bottom: 2px solid #565656; /*feel free to change the colour*/
+  border-left: 2px solid #565656;
+}
+
+.buttons > div { /*different border for each individual button (to avoid double borders)*/
+  border-top: 2px solid #565656;
+  border-right: 2px solid #565656;
+}
+
+.button{
+  text-align: center;
+  font-size: 30px;
+  line-height: 80px;
+  cursor:pointer; /*very cool, makes the button look clickable*/
+}
+
+.button:hover{ /*makes the button change colour (shade) when hovering*/
+  background-color:#CED8D4;
+  color: white; /* refers to the colour of the text*/
+  transition: 0.25s ease-in-out;
+  
+}
+
+#equals{ /*makes the equal button different*/
+  background-color: #49BA91;
+  color: white;
+}
